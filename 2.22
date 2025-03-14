@@ -1,0 +1,7 @@
+s = input("Enter the original string: ")
+word_to_remove = input("Enter the word to remove: ")
+
+
+result = s.replace(word_to_remove, "").strip()
+
+print("String after removing word:", result)
