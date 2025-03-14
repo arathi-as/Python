@@ -1,0 +1,7 @@
+def find_mode(numbers):
+    mode = max(set(numbers), key=numbers.count)
+    return mode
+
+
+numbers = list(map(int, input("Enter numbers separated by space: ").split()))
+print("Mode:", find_mode(numbers))
