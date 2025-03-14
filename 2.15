@@ -1,0 +1,17 @@
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+def nCr(n, r):
+    return factorial(n) // (factorial(r) * factorial(n - r))
+
+
+n = int(input("Enter the value of n: "))
+r = int(input("Enter the value of r: "))
+
+if r > n:
+    print("Invalid input! r should be less than or equal to n.")
+else:
+    print(f"{n}C{r} = {nCr(n, r)}")
