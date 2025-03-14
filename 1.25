@@ -1,0 +1,22 @@
+x = float(input("Enter the base (X): "))
+y = int(input("Enter the exponent (Y): "))
+
+
+result = 1
+
+
+if y > 0:
+    for _ in range(y):
+        result *= x
+
+
+elif y < 0:
+    for _ in range(-y):
+        result *= x
+    result = 1 / result  
+
+
+else:
+    result = 1
+
+print(f"{x}^{y} = {result}")
