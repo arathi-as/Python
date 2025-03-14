@@ -1,0 +1,15 @@
+import math  
+
+x = float(input("Enter value of x (in degrees): "))
+n = int(input("Enter number of terms: "))
+
+
+x = math.radians(x)
+
+
+result = 0
+for i in range(n):
+    term = ((-1) ** i) * (x ** (2 * i + 1)) / math.factorial(2 * i + 1)
+    result += term
+
+print(f"sin(x) ≈ {result}")
