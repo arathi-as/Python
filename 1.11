@@ -1,0 +1,11 @@
+x = int(input("Enter a positive integer: "))
+
+
+sum_of_cubes = 0
+
+
+for i in range(2, x + 1, 2):  
+    sum_of_cubes += i**3
+
+
+print(f"Sum of cubes of even numbers up to {x}: {sum_of_cubes}")
