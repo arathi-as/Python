@@ -1,0 +1,11 @@
+def sum(n):
+    total = 0
+    while n> 0:
+        total += n % 10
+        num //= 10
+    return total
+
+print("Numbers between 100 and 1000 whose sum of digits is divisible by 9:")
+for number in range(100, 1000):
+    if sum(number) % 9 == 0:
+        print(number, end=" ")
