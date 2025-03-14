@@ -1,0 +1,14 @@
+# Input: Lengths of the three sides
+a = float(input("Enter the length of side 1: "))
+b = float(input("Enter the length of side 2: "))
+c = float(input("Enter the length of side 3: "))
+
+# Identify the longest side (hypotenuse) for comparison
+sides = sorted([a, b, c])  # Sorting helps identify the largest side
+x, y, hypotenuse = sides
+
+# Check if it satisfies the Pythagorean theorem
+if round(x**2 + y**2, 2) == round(hypotenuse**2, 2):
+    print("The triangle is a right-angled triangle.")
+else:
+    print("The triangle is NOT a right-angled triangle.")
