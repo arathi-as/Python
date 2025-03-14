@@ -1,0 +1,24 @@
+def prime_factors(num):
+    print(f"Prime factors of {num}: ", end="")
+    
+    
+    while num % 2 == 0:
+        print(2, end=" ")
+        num //= 2
+    
+    
+    for i in range(3, int(num**0.5) + 1, 2):
+        while num % i == 0:
+            print(i, end=" ")
+            num //= i
+    
+    
+    if num > 2:
+        print(num)
+
+
+n = int(input("Enter a number: ")
+if n > 1:
+    prime_factors(n)
+else:
+    print("Enter a number greater than 1.")
